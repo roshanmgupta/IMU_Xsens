@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<OpenSimDocument Version="40000">
+	<IMUPlacerTool name="arm26_calibration">
+		<!-- ABSOLUTE USER DOCUMENTS SKELETON MODEL PATH -->
+		<model_file>C:\Users\Srushti\Documents\OpenSim\4.4\Models\Arm26\arm26.osim</model_file>
+		<!-- ABSOLUTE USER DOCUMENTS XSENS TRACKING DATA PATH -->
+		<orientation_file_for_calibration>C:\Users\Srushti\Documents\OpenSim\4.4\Models\Arm26\arm_movement.sto</orientation_file_for_calibration>
+		<sensor_to_opensim_rotations>0 0 0</sensor_to_opensim_rotations>
+		<IMUPlacer>
+			<IKTaskSet>
+				<objects>
+					<IMUInverseKinematicsToolIMUNameTask name="IMU_UpperArm">
+						<applied>true</applied>
+						<model_segment_name>r_humerus</model_segment_name>
+					</IMUInverseKinematicsToolIMUNameTask>
+					<IMUInverseKinematicsToolIMUNameTask name="IMU_Forearm">
+						<applied>true</applied>
+						<model_segment_name>r_ulna_radius_hand</model_segment_name>
+					</IMUInverseKinematicsToolIMUNameTask>
+				</objects>
+				<groups />
+			</IKTaskSet>
+			<base_imu_label>IMU_UpperArm</base_imu_label>
+			<base_heading_axis>x</base_heading_axis>
+			<!-- OUTPUT FILE PATH PRESERVED SAFELY INSIDE YOUR DESIGNATED USER FOLDER -->
+			<output_model_file>C:\Users\Srushti\Documents\OpenSim\4.4\Models\Arm26\arm26_calibrated.osim</output_model_file>
+		</IMUPlacer>
+	</IMUPlacerTool>
+</OpenSimDocument>

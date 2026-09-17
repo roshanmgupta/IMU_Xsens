@@ -1,0 +1,277 @@
+[2026-07-17 11:14:44.428] [info] Updating Model file from 20303 to latest format...
+[2026-07-17 11:14:44.450] [info] Loaded model arm26 from file C:\Users\Srushti\Documents\MovellaProject\arm26.osim
+[2026-07-17 11:14:44.512] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2026-07-17 11:14:44.513] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2026-07-24 10:33:54.806] [info] Updating Model file from 20303 to latest format...
+[2026-07-24 10:33:54.815] [info] Loaded model arm26 from file C:/Users/Srushti/Documents/MovellaProject/arm26.osim
+[2026-07-24 10:33:55.209] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2026-07-24 10:33:55.209] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2026-07-24 10:35:16.216] [info] Storage: read data file = C:\Users\Srushti\Documents\MovellaProject\arm26_elbow_motion.mot (nr=114 nc=2)
+[2026-07-24 10:35:42.707] [warning] Running tool arm26...
+[2026-07-24 10:35:42.707] [info] No external loads will be applied (external loads file not specified).
+[2026-07-24 10:35:42.712] [cout] [info] MODEL: arm26
+
+numStates = 16
+numCoordinates = 2
+numSpeeds = 2
+numActuators = 6
+numBodies = 3
+numConstraints = 0
+numProbes = 0
+
+ANALYSES (total: 2)
+analysis[0] = Un-named analysis.
+analysis[1] = Un-named analysis.
+
+BODIES (total: 3)
+body[0] = base. mass: 0
+              moments of inertia:  ~[0,0,0]
+              products of inertia: ~[0,0,0]
+body[1] = r_humerus. mass: 1.86457
+              moments of inertia:  ~[0.01481,0.004551,0.013193]
+              products of inertia: ~[0,0,0]
+body[2] = r_ulna_radius_hand. mass: 1.53432
+              moments of inertia:  ~[0.019281,0.001571,0.020062]
+              products of inertia: ~[0,0,0]
+
+JOINTS (total: 3)
+joint[0] = offset. parent: ground_offset, child: base_offset
+joint[1] = r_shoulder. parent: base_offset, child: r_humerus_offset
+joint[2] = r_elbow. parent: r_humerus_offset, child: r_ulna_radius_hand_offset
+
+ACTUATORS (total: 6)
+actuator[0] = TRIlong
+actuator[1] = TRIlat
+actuator[2] = TRImed
+actuator[3] = BIClong
+actuator[4] = BICshort
+actuator[5] = BRA
+
+STATES (total: 16)
+y[0] = /jointset/r_shoulder/r_shoulder_elev/value
+y[1] = /jointset/r_shoulder/r_shoulder_elev/speed
+y[2] = /jointset/r_elbow/r_elbow_flex/value
+y[3] = /jointset/r_elbow/r_elbow_flex/speed
+y[4] = /forceset/TRIlong/activation
+y[5] = /forceset/TRIlong/fiber_length
+y[6] = /forceset/TRIlat/activation
+y[7] = /forceset/TRIlat/fiber_length
+y[8] = /forceset/TRImed/activation
+y[9] = /forceset/TRImed/fiber_length
+y[10] = /forceset/BIClong/activation
+y[11] = /forceset/BIClong/fiber_length
+y[12] = /forceset/BICshort/activation
+y[13] = /forceset/BICshort/fiber_length
+y[14] = /forceset/BRA/activation
+y[15] = /forceset/BRA/fiber_length
+
+[2026-07-24 10:35:42.712] [info] Integrating from 0.0 to 5.0.
+[2026-07-24 10:35:47.939] [warning] Running tool arm26...
+[2026-07-24 10:35:47.939] [info] No external loads will be applied (external loads file not specified).
+[2026-07-24 10:35:47.941] [cout] [info] MODEL: arm26
+
+numStates = 16
+numCoordinates = 2
+numSpeeds = 2
+numActuators = 6
+numBodies = 3
+numConstraints = 0
+numProbes = 0
+
+ANALYSES (total: 2)
+analysis[0] = Un-named analysis.
+analysis[1] = Un-named analysis.
+
+BODIES (total: 3)
+body[0] = base. mass: 0
+              moments of inertia:  ~[0,0,0]
+              products of inertia: ~[0,0,0]
+body[1] = r_humerus. mass: 1.86457
+              moments of inertia:  ~[0.01481,0.004551,0.013193]
+              products of inertia: ~[0,0,0]
+body[2] = r_ulna_radius_hand. mass: 1.53432
+              moments of inertia:  ~[0.019281,0.001571,0.020062]
+              products of inertia: ~[0,0,0]
+
+JOINTS (total: 3)
+joint[0] = offset. parent: ground_offset, child: base_offset
+joint[1] = r_shoulder. parent: base_offset, child: r_humerus_offset
+joint[2] = r_elbow. parent: r_humerus_offset, child: r_ulna_radius_hand_offset
+
+ACTUATORS (total: 6)
+actuator[0] = TRIlong
+actuator[1] = TRIlat
+actuator[2] = TRImed
+actuator[3] = BIClong
+actuator[4] = BICshort
+actuator[5] = BRA
+
+STATES (total: 16)
+y[0] = /jointset/r_shoulder/r_shoulder_elev/value
+y[1] = /jointset/r_shoulder/r_shoulder_elev/speed
+y[2] = /jointset/r_elbow/r_elbow_flex/value
+y[3] = /jointset/r_elbow/r_elbow_flex/speed
+y[4] = /forceset/TRIlong/activation
+y[5] = /forceset/TRIlong/fiber_length
+y[6] = /forceset/TRIlat/activation
+y[7] = /forceset/TRIlat/fiber_length
+y[8] = /forceset/TRImed/activation
+y[9] = /forceset/TRImed/fiber_length
+y[10] = /forceset/BIClong/activation
+y[11] = /forceset/BIClong/fiber_length
+y[12] = /forceset/BICshort/activation
+y[13] = /forceset/BICshort/fiber_length
+y[14] = /forceset/BRA/activation
+y[15] = /forceset/BRA/fiber_length
+
+[2026-07-24 10:35:47.941] [info] Integrating from 0.0 to 5.0.
+[2026-07-24 10:35:54.830] [warning] Running tool arm26...
+[2026-07-24 10:35:54.830] [info] No external loads will be applied (external loads file not specified).
+[2026-07-24 10:35:54.832] [cout] [info] MODEL: arm26
+
+numStates = 16
+numCoordinates = 2
+numSpeeds = 2
+numActuators = 6
+numBodies = 3
+numConstraints = 0
+numProbes = 0
+
+ANALYSES (total: 2)
+analysis[0] = Un-named analysis.
+analysis[1] = Un-named analysis.
+
+BODIES (total: 3)
+body[0] = base. mass: 0
+              moments of inertia:  ~[0,0,0]
+              products of inertia: ~[0,0,0]
+body[1] = r_humerus. mass: 1.86457
+              moments of inertia:  ~[0.01481,0.004551,0.013193]
+              products of inertia: ~[0,0,0]
+body[2] = r_ulna_radius_hand. mass: 1.53432
+              moments of inertia:  ~[0.019281,0.001571,0.020062]
+              products of inertia: ~[0,0,0]
+
+JOINTS (total: 3)
+joint[0] = offset. parent: ground_offset, child: base_offset
+joint[1] = r_shoulder. parent: base_offset, child: r_humerus_offset
+joint[2] = r_elbow. parent: r_humerus_offset, child: r_ulna_radius_hand_offset
+
+ACTUATORS (total: 6)
+actuator[0] = TRIlong
+actuator[1] = TRIlat
+actuator[2] = TRImed
+actuator[3] = BIClong
+actuator[4] = BICshort
+actuator[5] = BRA
+
+STATES (total: 16)
+y[0] = /jointset/r_shoulder/r_shoulder_elev/value
+y[1] = /jointset/r_shoulder/r_shoulder_elev/speed
+y[2] = /jointset/r_elbow/r_elbow_flex/value
+y[3] = /jointset/r_elbow/r_elbow_flex/speed
+y[4] = /forceset/TRIlong/activation
+y[5] = /forceset/TRIlong/fiber_length
+y[6] = /forceset/TRIlat/activation
+y[7] = /forceset/TRIlat/fiber_length
+y[8] = /forceset/TRImed/activation
+y[9] = /forceset/TRImed/fiber_length
+y[10] = /forceset/BIClong/activation
+y[11] = /forceset/BIClong/fiber_length
+y[12] = /forceset/BICshort/activation
+y[13] = /forceset/BICshort/fiber_length
+y[14] = /forceset/BRA/activation
+y[15] = /forceset/BRA/fiber_length
+
+[2026-07-24 10:35:54.832] [info] Integrating from 0.0 to 5.0.
+[2026-07-24 10:36:22.860] [warning] Running tool arm26...
+[2026-07-24 10:36:22.860] [info] No external loads will be applied (external loads file not specified).
+[2026-07-24 10:36:22.861] [cout] [info] MODEL: arm26
+
+numStates = 16
+numCoordinates = 2
+numSpeeds = 2
+numActuators = 6
+numBodies = 3
+numConstraints = 0
+numProbes = 0
+
+ANALYSES (total: 2)
+analysis[0] = Un-named analysis.
+analysis[1] = Un-named analysis.
+
+BODIES (total: 3)
+body[0] = base. mass: 0
+              moments of inertia:  ~[0,0,0]
+              products of inertia: ~[0,0,0]
+body[1] = r_humerus. mass: 1.86457
+              moments of inertia:  ~[0.01481,0.004551,0.013193]
+              products of inertia: ~[0,0,0]
+body[2] = r_ulna_radius_hand. mass: 1.53432
+              moments of inertia:  ~[0.019281,0.001571,0.020062]
+              products of inertia: ~[0,0,0]
+
+JOINTS (total: 3)
+joint[0] = offset. parent: ground_offset, child: base_offset
+joint[1] = r_shoulder. parent: base_offset, child: r_humerus_offset
+joint[2] = r_elbow. parent: r_humerus_offset, child: r_ulna_radius_hand_offset
+
+ACTUATORS (total: 6)
+actuator[0] = TRIlong
+actuator[1] = TRIlat
+actuator[2] = TRImed
+actuator[3] = BIClong
+actuator[4] = BICshort
+actuator[5] = BRA
+
+STATES (total: 16)
+y[0] = /jointset/r_shoulder/r_shoulder_elev/value
+y[1] = /jointset/r_shoulder/r_shoulder_elev/speed
+y[2] = /jointset/r_elbow/r_elbow_flex/value
+y[3] = /jointset/r_elbow/r_elbow_flex/speed
+y[4] = /forceset/TRIlong/activation
+y[5] = /forceset/TRIlong/fiber_length
+y[6] = /forceset/TRIlat/activation
+y[7] = /forceset/TRIlat/fiber_length
+y[8] = /forceset/TRImed/activation
+y[9] = /forceset/TRImed/fiber_length
+y[10] = /forceset/BIClong/activation
+y[11] = /forceset/BIClong/fiber_length
+y[12] = /forceset/BICshort/activation
+y[13] = /forceset/BICshort/fiber_length
+y[14] = /forceset/BRA/activation
+y[15] = /forceset/BRA/fiber_length
+
+[2026-07-24 10:36:22.862] [info] Integrating from 0.0 to 5.0.
+[2026-07-24 10:39:55.924] [info] Updating Model file from 20303 to latest format...
+[2026-07-24 10:39:55.929] [info] Loaded model arm26 from file C:/Users/Srushti/Documents/MovellaProject/arm26.osim
+[2026-07-24 10:39:55.934] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2026-07-24 10:39:55.934] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2026-07-24 10:40:25.529] [info] Storage: read data file = C:\Users\Srushti\Documents\MovellaProject\arm26_elbow_motion.mot (nr=114 nc=2)
+[2026-07-24 13:25:05.318] [info] Updating Model file from 20303 to latest format...
+[2026-07-24 13:25:05.327] [info] Loaded model arm26 from file C:/Users/Srushti/Documents/MovellaProject/arm26.osim
+[2026-07-24 13:25:05.344] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2026-07-24 13:25:05.345] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2026-07-24 13:25:30.890] [info] Storage: read data file = C:\Users\Srushti\Documents\MovellaProject\arm26_elbow_motion.mot (nr=114 nc=2)
+[2026-07-27 16:08:20.839] [info] Updating Model file from 20303 to latest format...
+[2026-07-27 16:08:20.845] [info] Loaded model arm26 from file C:\Users\Srushti\Documents\MovellaProject\arm26.osim
+[2026-07-27 16:08:21.169] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2026-07-27 16:08:21.169] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2026-07-31 12:01:51.120] [info] Updating Model file from 20303 to latest format...
+[2026-07-31 12:01:51.264] [info] Loaded model arm26 from file C:/Users/Srushti/Documents/MovellaProject/arm26.osim
+[2026-07-31 12:01:52.010] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2026-07-31 12:01:52.011] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2026-07-31 12:02:08.787] [info] Storage: read data file = C:\Users\Srushti\Documents\MovellaProject\arm26_arm_shoulder_motion.mot (nr=2 nc=3)
+[2026-07-31 12:07:50.028] [info] Storage: read data file = C:\Users\Srushti\Documents\MovellaProject\arm26_arm_shoulder_motion.mot (nr=138 nc=3)
+[2026-08-04 18:23:35.529] [info] Updating Model file from 20303 to latest format...
+[2026-08-04 18:23:35.539] [info] Loaded model arm26 from file C:/Users/Srushti/Documents/MovellaProject/arm26.osim
+[2026-08-04 18:23:35.873] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2026-08-04 18:23:35.874] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2026-08-04 18:23:43.696] [info] Storage: read data file = C:\Users\Srushti\Documents\MovellaProject\arm26_arm_shoulder_motion_test1.mot (nr=138 nc=3)
+[2026-09-08 13:49:46.182] [info] Updating Model file from 20303 to latest format...
+[2026-09-08 13:49:46.207] [info] Loaded model arm26 from file C:/Users/Srushti/Documents/MovellaProject/arm26.osim
+[2026-09-08 13:49:46.523] [info] ControllerSet 'Controllers' was renamed and is being reset to 'controllerset'.
+[2026-09-08 13:49:46.524] [info] ComponentSet 'MiscComponents' was renamed and is being reset to 'componentset'.
+[2026-09-08 13:50:03.125] [info] Storage: read data file = C:\Users\Srushti\Documents\MovellaProject\arm26_elbow_motion_2.mot (nr=160 nc=2)
+[2026-09-08 13:50:29.436] [info] Storage: read data file = C:\Users\Srushti\Documents\MovellaProject\arm26_elbow_motion_1.mot (nr=160 nc=2)
+[2026-09-08 13:50:44.195] [info] Storage: read data file = C:\Users\Srushti\Documents\MovellaProject\arm26_arm_shoulder_motion_test1.mot (nr=138 nc=3)

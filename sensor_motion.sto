@@ -1,0 +1,7 @@
+sensor_motion
+version=1
+nRows=0
+nColumns=5
+inDegrees=no
+endheader
+time	pelvis_imu_q0	pelvis_imu_q1	pelvis_imu_q2	pelvis_imu_q3
