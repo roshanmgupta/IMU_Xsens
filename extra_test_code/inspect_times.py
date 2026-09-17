@@ -1,4 +1,4 @@
-from compare_imus import read_time_and_col
+from extra_test_code.compare_imus import read_time_and_col
 from pathlib import Path
 import numpy as np
 
